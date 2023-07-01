@@ -14,6 +14,7 @@ data LexerState e = LexerState
   {
     lexerInput :: String,
     lexerOffset :: {-# UNPACK #-} !Int,
-    lexerPos :: Position,
+    lexerPos :: PositionPoint,
+    lexerFileName :: String,
     lexerErrors :: [e]
   } deriving (Eq, Show)

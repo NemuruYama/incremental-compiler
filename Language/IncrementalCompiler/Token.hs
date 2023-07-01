@@ -25,6 +25,7 @@ data Signed = Signed | Unsigned
   deriving (Eq, Show)
 
 data PositionedToken = PositionedToken Token Position
+  deriving (Eq, Show)
 
 instance Positioned PositionedToken where
   position (PositionedToken _ pos) = pos 

@@ -2,7 +2,8 @@
 module Language.IncrementalCompiler.Error 
   (
     -- Error(..),
-    LexerError(..)
+    LexerError(..),
+    LexerErrorType(..)
   ) where
 
 import Language.IncrementalCompiler.Position
